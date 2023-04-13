@@ -43,13 +43,19 @@ class Home extends Component{
     render(){
         return(
             <div className="home">
-                <label>Choose A Country</label>
+                <div class="title">
+                    <h1> Tracking Covid-19 </h1>
+                    <p class="undertitle">Stats of October 2020
+                    <p class="info">confirmed, recovered, deaths</p>
+                    </p>
+                <label>Choose a Country</label>
                 <select className="drop-down" onChange={this.handleCountryChange}>
                     {this.state.countries && this.state.countries.map((country)=> 
-                    <option key={country[0]} value={country[1]}>{country[0]}</option>
+                    <option class="dropdown-content" key={country[0]} value={country[1]}>{country[0]}</option>
                     )}
                 </select>
-                <button onClick={()=>this._clicked()}>Get Data</button>
+                <button class="button" onClick={()=>this._clicked()}>Get Data</button>
+                </div>
             </div>
         );
     }

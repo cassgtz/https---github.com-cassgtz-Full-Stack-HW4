@@ -52,7 +52,7 @@ function Country() {
             <p>Confirmed: {confirmed}</p>
             <p>Recovered: {recovered}</p>
             <p>Deaths: {deaths}</p>
-            <button onClick={()=>{window.location.href = '/'}}>Go back</button>
+            <button class="button" onClick={()=>{window.location.href = '/'}}>Go back</button>
         </div>
     );
    
